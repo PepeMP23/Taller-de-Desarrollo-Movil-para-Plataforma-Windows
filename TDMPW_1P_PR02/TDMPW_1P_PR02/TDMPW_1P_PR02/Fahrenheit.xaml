@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_1P_PR02.Fahrenheit"
+             Title="Fahrenheit">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            >
+
+        <Label 
+            Text="Convertir Fahrenheit"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Title"
+            />
+        <Image
+            Source="fahrenheit.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            />
+        <Label 
+            Text="Ingrese cantidad en grados Fahrenheit"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Medium"
+            />
+        <Entry
+            x:Name="entFahrenheit"
+            WidthRequest="300"
+            />
+        <Button
+            x:Name="btnFahrenheitCelcius"
+            Text="Celcius"
+            WidthRequest="300"
+            FontSize="Medium"
+            Clicked="btnFahrenheitCelcius_Clicked"
+            />
+        <Button
+            x:Name="btnFahrenheitKelvin"
+            Text="Kelvin"
+            WidthRequest="300"
+            FontSize="Medium"
+            Clicked="btnFahrenheitKelvin_Clicked"
+            />
+        <Label
+            x:Name="txtResultadoFahrenheit"
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Medium"
+            />
+    </VerticalStackLayout>
+</ContentPage>

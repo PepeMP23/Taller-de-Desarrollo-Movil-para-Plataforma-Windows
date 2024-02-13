@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{7AC4127D-6B41-42B0-B3A7-12618CC36522}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TDMPW__1P__PR04 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.165A55F1-488B-4591-A4EB-0BE57FA53E05" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDMPW_1P_PR04/MainPage.xaml">
+    <Files>
+      <File FileName="TDMPW_1P_PR04/MainPage.xaml.cs" />
+      <File FileName="TDMPW_1P_PR04/MainPage.xaml" Line="53" Column="33" />
+      <File FileName="TDMPW_1P_PR04/App.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TDMPW_1P_PR04" expanded="True">
+            <Node name="TDMPW_1P_PR04">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Platforms" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.165A55F1-488B-4591-A4EB-0BE57FA53E05" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

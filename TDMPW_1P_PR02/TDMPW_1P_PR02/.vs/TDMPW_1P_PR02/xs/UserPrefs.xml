@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{597FED45-0D71-4D6D-97D7-411523BBBC17}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDMPW_1P_PR02/Kelvin.xaml.cs">
+    <Files>
+      <File FileName="TDMPW_1P_PR02/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="TDMPW_1P_PR02/Kelvin.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TDMPW_1P_PR02" expanded="True">
+            <Node name="TDMPW_1P_PR02" expanded="True">
+              <Node name="Kelvin.xaml" expanded="True">
+                <Node name="Kelvin.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TDMPW__1P__PR02 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+</Properties>

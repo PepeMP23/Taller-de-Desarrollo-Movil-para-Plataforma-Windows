@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{587EE948-69BF-4372-8018-E15D0448059F}|Default">
+  <MonoDevelop.Ide.ItemProperties.TDMPW__1P__EJ04 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDMPW_1P_EJ04/MainPage.xaml">
+    <Files>
+      <File FileName="TDMPW_1P_EJ04/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TDMPW_1P_EJ04/MainPage.xaml" Line="28" Column="34" />
+      <File FileName="TDMPW_1P_EJ04/Resources/Styles/Colors.xaml" Line="10" Column="14" />
+      <File FileName="TDMPW_1P_EJ04/Resources/Styles/Styles.xaml" Line="28" Column="132" />
+      <File FileName="TDMPW_1P_EJ04/MauiProgram.cs" Line="17" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TDMPW_1P_EJ04" expanded="True">
+            <Node name="TDMPW_1P_EJ04">
+              <Node name="Resources">
+                <Node name="Fonts" expanded="True" />
+                <Node name="Styles" expanded="True" />
+              </Node>
+              <Node name="MainPage.xaml" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

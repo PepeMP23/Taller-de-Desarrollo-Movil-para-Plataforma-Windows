@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_1P_PR03.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+        >
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="Bienvenido al conversor de divisas!"
+                    FontSize="32"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,50"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    />
+                <Image
+                    Source="conversor_divisas.png"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,50"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    />
+                <Label
+                    Text="Que deseas convertir"
+                    FontSize="18"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,50"
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    />
+                <Button
+                    x:Name="btnMxn"
+                    Text="MXN"
+                    Clicked="btnMxn_Clicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="100"
+                    Margin="0,0,0,50"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    />
+                <Button
+                    x:Name="btnUsd"
+                    Text="USD"
+                    Clicked="btnUsd_Clicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="100"
+                    Margin="0,0,0,50"
+                    Grid.Column="2"
+                    Grid.Row="3"
+                    />
+                <Button
+                    x:Name="btnEur"
+                    Text="EUR"
+                    Clicked="btnEur_Clicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="100"
+                    Margin="0,0,0,50"
+                    Grid.Column="4"
+                    Grid.Row="3"
+                    />
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

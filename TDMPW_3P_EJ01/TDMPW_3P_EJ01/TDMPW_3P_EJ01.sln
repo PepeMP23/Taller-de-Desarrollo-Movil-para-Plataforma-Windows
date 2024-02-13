@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDMPW_3P_EJ01", "TDMPW_3P_EJ01\TDMPW_3P_EJ01.csproj", "{87212945-EB9D-4974-8DB8-FE48ABE9422E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87212945-EB9D-4974-8DB8-FE48ABE9422E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87212945-EB9D-4974-8DB8-FE48ABE9422E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87212945-EB9D-4974-8DB8-FE48ABE9422E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87212945-EB9D-4974-8DB8-FE48ABE9422E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B38486B2-E6E4-4A1C-BD5B-079AF44CF529}
+	EndGlobalSection
+EndGlobal

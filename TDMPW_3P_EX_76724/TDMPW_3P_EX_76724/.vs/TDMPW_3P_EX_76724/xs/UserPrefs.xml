@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{B974C8F9-C84C-4BAD-8469-0EDE96212116}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDMPW_3P_EX_76724/MVVM/Views/MainView.xaml.cs">
+    <Files>
+      <File FileName="TDMPW_3P_EX_76724/MVVM/Models/MainModel.cs" Line="14" Column="25" />
+      <File FileName="TDMPW_3P_EX_76724/MVVM/ViewModels/MainViewModel.cs" Line="9" Column="20" />
+      <File FileName="TDMPW_3P_EX_76724/MVVM/Views/MainView.xaml" Line="371" Column="43" />
+      <File FileName="TDMPW_3P_EX_76724/MVVM/Views/MainView.xaml.cs" Line="12" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TDMPW_3P_EX_76724" expanded="True">
+            <Node name="TDMPW_3P_EX_76724">
+              <Node name="MVVM" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="ViewModels" expanded="True" />
+                <Node name="Views" expanded="True">
+                  <Node name="MainView.xaml">
+                    <Node name="MainView.xaml.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Resources">
+                <Node name="Fonts" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TDMPW__3P__EX__76724 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+</Properties>

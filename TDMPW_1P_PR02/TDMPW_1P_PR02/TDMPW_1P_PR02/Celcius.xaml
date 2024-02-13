@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_1P_PR02.Celcius"
+             Title="Celcius">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            >
+
+        <Label 
+            Text="Convertir Celcius"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Title"
+            />
+        <Image
+            Source="celsius.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            />
+        <Label 
+            Text="Ingrese cantidad en grados Celcius"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Medium"
+            />
+        <Entry
+            x:Name="entCelcius"
+            WidthRequest="300"
+            />
+        <Button
+            x:Name="btnCelciusKelvin"
+            Text="A Kelvin"
+            WidthRequest="300"
+            FontSize="Medium"
+            Clicked="btnCelciusKelvin_Clicked"
+            />
+        <Button
+            x:Name="btnCelciusFahrenheit"
+            Text="A Fahrenheit"
+            WidthRequest="300"
+            FontSize="Medium"
+            Clicked="btnCelciusFahrenheit_Clicked"
+            />
+        <Label
+            x:Name="txtResultadoCelcius"
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Medium"
+            />
+    </VerticalStackLayout>
+</ContentPage>

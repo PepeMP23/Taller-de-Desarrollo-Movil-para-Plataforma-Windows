@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_P1_PR05.MainPage">
+
+    <ScrollView>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label
+                x:Name="lblTitle"
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Text="Juego de Sliders"
+                FontSize="42"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontFamily="Minecraft"
+                Margin="20, 0, 0, 0"
+                />
+            <Image
+                Grid.Row="1"
+                Grid.Column="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Source="control_videojuego.png"
+                HeightRequest="200"
+                />
+            <Slider
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                x:Name="sld1"
+                Maximum="10"
+                Minimum="0"
+                MinimumTrackColor="Red"
+                MaximumTrackColor="Gray"
+                ThumbColor="Red"
+                ValueChanged="sld1_ValueChanged"
+                IsEnabled="False"
+            />
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                x:Name="lblSlider1"
+                Text="0"
+                />
+            <Slider
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                x:Name="sld2"
+                Maximum="20"
+                Minimum="11"
+                MinimumTrackColor="Red"
+                MaximumTrackColor="Gray"
+                ThumbColor="Red"
+                ValueChanged="sld2_ValueChanged"
+                IsEnabled="False"
+            />
+            <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                x:Name="lblSlider2"
+                Text="0"
+                />
+            <Slider
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                x:Name="sld3"
+                Maximum="30"
+                Minimum="21"
+                MinimumTrackColor="Red"
+                MaximumTrackColor="Gray"
+                ThumbColor="Red"
+                ValueChanged="sld3_ValueChanged"
+                IsEnabled="False"
+            />
+            <Label
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                x:Name="lblSlider3"
+                Text="0"
+                />
+
+            <Button
+                Grid.Row="5"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="btn1"
+                Text="+"
+                Clicked="stp1_Clicked"
+                />
+            <Label
+                Grid.Row="5"
+                Grid.Column="2"
+                FontFamily="Minecraft"
+                FontSize="40"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="lblScore"
+                Text="0"
+                />
+            <Button
+                Grid.Row="5"
+                Grid.Column="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="btn2"
+                Text="+"
+                Clicked="stp1_Clicked"
+                />
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
+

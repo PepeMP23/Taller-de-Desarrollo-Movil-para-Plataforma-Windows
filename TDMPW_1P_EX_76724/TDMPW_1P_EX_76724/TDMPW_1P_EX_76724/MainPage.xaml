@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_1P_EX_76724.MainPage"
+             SelectedTabColor="#aaffff"
+             UnselectedTabColor="#116666">
+
+    <ContentPage
+        Title="Home Page"
+        IconImageSource="home.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="7*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,15"
+                >
+                <StackLayout>
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="20"
+                        BorderColor="Blue"
+                        HeightRequest="200"
+                        WidthRequest="200"
+                        CornerRadius="100"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        IsClippedToBounds="True">
+                        <Image
+                        Source="calculator.png"
+                        Aspect="AspectFill"
+                        HeightRequest="150"
+                        WidthRequest="150"
+                        />
+                    </Frame>
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Bienvenido"
+                        FontSize="42"
+                        VerticalOptions="Center"
+                        Margin="0, 20, 0, 0"
+                        />
+                    <BoxView
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Color="Blue"
+                        HeightRequest="5"
+                        HorizontalOptions="Fill"
+                        Margin="0, 10, 0, 30"
+                        />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="¿Qué deseas calcular?"
+                        FontSize="20"
+                        />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="¿Te preguntas cuánta energía consumen tus dispositivos eléctricos o cuánta potencia necesitas para tus electrodomésticos? Esta página ofrece una calculadora fácil de usar para determinar los Watts a partir de voltios y amperaje, aspectos clave en electricidad. Obtén respuestas rápidas y precisas para evaluar la eficiencia energética o planificar circuitos eléctricos."
+                        FontSize="20"
+                        />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Comprender la relación entre Watts y Joules por segundo es esencial en el mundo energético. Esta página proporciona una calculadora simple para determinar los Watts a partir de la cantidad de Joules por segundo. Ya sea para explorar fuentes de energía o evaluar dispositivos, obtén la información necesaria para decisiones informadas sobre electricidad."
+                        FontSize="20"
+                        />
+                    
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        Title="Watts Calculator"
+        IconImageSource="lightning.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="7*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,15"
+                >
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <Frame
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="20, 20, 20, 40"
+                            BorderColor="blue"
+                            HeightRequest="200"
+                            WidthRequest="200"
+                            CornerRadius="100"
+                            IsClippedToBounds="True">
+                            <Image
+                                Source="amperios.png"
+                                Aspect="AspectFill"
+                                HeightRequest="200"
+                                WidthRequest="200"
+                                />
+                        </Frame>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Text="Calcular potencia en watts"
+                            FontSize="38"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="0, 0, 0, 40"
+                            />
+                        <BoxView
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Color="Blue"
+                            HeightRequest="5"
+                            Margin="0, 20, 0, 0"
+                            HorizontalOptions="Fill"
+                            />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalOptions="Center"
+                            Margin="0, 0, 0, 20"
+                            Text="Ingrese cantidad en Amperios"
+                            FontSize="20"
+                            />
+                        <Entry
+                            x:Name="entAmperios"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            WidthRequest="250"
+                            HorizontalOptions="Center"
+                            Margin="0, 0, 0, 40"
+                            FontSize="20"
+                            />
+                        <Label
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            HorizontalOptions="Center"
+                            Margin="0, 0, 0, 20"
+                            Text="Ingrese cantidad en Voltios"
+                            FontSize="20"
+                            />
+                        <Entry
+                            x:Name="entVoltios"
+                            Grid.Row="4"
+                            Grid.Column="1"
+                            WidthRequest="250"
+                            HorizontalOptions="Center"
+                            Margin="0, 0, 0, 40"
+                            FontSize="20"
+                            />
+                        <Button
+                            x:Name="btncalcularWatts"
+                            Text="Calcular"
+                            Grid.Row="5"
+                            Grid.Column="1"
+                            WidthRequest="250"
+                            HorizontalOptions="Center"
+                            Margin="0, 0, 0, 40"
+                            TextColor="White"
+                            FontSize="20"
+                            BackgroundColor="blue"
+                            Clicked="btncalcularWatts_Clicked"
+                            />
+                        <Label
+                            x:Name="lblResultadoWatts"
+                            Grid.Row="6"
+                            Grid.Column="1"
+                            HorizontalOptions="Center"
+                            Text=""
+                            FontSize="20"
+                            Margin="0, 0, 0, 40"
+                            />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        Title="Joules"
+        IconImageSource="clock_time.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="7*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,15"
+                >
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Frame
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="20, 20, 20, 40"
+                            BorderColor="blue"
+                            HeightRequest="200"
+                            WidthRequest="200"
+                            CornerRadius="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            IsClippedToBounds="True">
+                            <Image
+                                Source="production.png"
+                                Aspect="AspectFill"
+                                HeightRequest="150"
+                                WidthRequest="150"
+                                />
+                        </Frame>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Text="Potencia necesaria"
+                            FontSize="38"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="0, 0, 0, 40"
+                            />
+                        <BoxView
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Color="Blue"
+                            HeightRequest="5"
+                            HorizontalOptions="Fill"
+                            Margin="0, 20, 0, 0"
+                            />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalOptions="Center"
+                            Text="Ingrese cantidad en Joules"
+                            FontSize="20"
+                            Margin="0, 0, 0, 20"
+                            />
+                        <Entry
+                            x:Name="entJoules"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            HorizontalOptions="Center"
+                            WidthRequest="250"
+                            FontSize="20"
+                            Margin="0, 0, 0, 40"
+                            />
+                        <Label
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            HorizontalOptions="Center"
+                            Text="Ingrese cantidad de tiempo en segundos"
+                            FontSize="20"
+                            Margin="0, 0, 0, 20"
+                            />
+                        <Entry
+                            x:Name="entSegundos"
+                            Grid.Row="4"
+                            Grid.Column="1"
+                            WidthRequest="250"
+                            HorizontalOptions="Center"
+                            FontSize="20"
+                            Margin="0, 0, 0, 40"
+                            />
+                        <Button
+                            x:Name="btncalcularProceso"
+                            Grid.Row="5"
+                            Grid.Column="1"
+                            WidthRequest="250"
+                            HorizontalOptions="Center"
+                            Text="Calcular"
+                            TextColor="White"
+                            BackgroundColor="blue"
+                            FontSize="20"
+                            Margin="0, 0, 0, 40"
+                            Clicked="btncalcularProceso_Clicked"
+                            />
+                        <Label
+                            x:Name="lblResultadoPotencia"
+                            Grid.Row="6"
+                            Grid.Column="1"
+                            HorizontalOptions="Center"
+                            Text=""
+                            FontSize="20"
+                            Margin="0, 0, 0, 40"
+                            />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage>
+    
+
+</TabbedPage>
+

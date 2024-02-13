@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_1P_PR06.MainPage"
+             SelectedTabColor="#aaffff"
+             UnselectedTabColor="#116666">
+
+    <ContentPage
+        Title="Sinopsis"
+        IconImageSource="light_saber.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="7*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,15"
+                >
+                <StackLayout>
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="20"
+                        BorderColor="Blue"
+                        HeightRequest="200"
+                        WidthRequest="200"
+                        CornerRadius="100"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        IsClippedToBounds="True">
+                        <Image
+                        Source="star_wars.jpeg"
+                        Aspect="AspectFill"
+                        HeightRequest="300"
+                        WidthRequest="300"
+                        />
+                    </Frame>
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Star-Wars"
+                        FontSize="42"
+                        FontFamily="StarWars"
+                        VerticalOptions="Center"
+                        Margin="0, 20, 0, 0"
+                        />
+                    <BoxView
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Color="Blue"
+                        HeightRequest="5"
+                        HorizontalOptions="Fill"
+                        Margin="0, 10, 0, 30"
+                        />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Star Wars es una franquicia de ciencia ficción que se desarrolla en una galaxia lejana y se centra en la eterna lucha entre el bien y el mal. La trama sigue a los Jedi, usuarios de la Fuerza, en su lucha contra los Sith, usuarios oscuros de la misma energía mística. La historia principal se enfoca en la familia Skywalker, con Anakin Skywalker convirtiéndose en el temido Darth Vader, y luego en su redención a través de su hijo, Luke Skywalker, en la trilogía original."
+                        FontSize="20"
+                        />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="La saga se divide en tres trilogías principales: las películas originales que presentan la lucha de la Alianza Rebelde contra el Imperio Galáctico, las precuelas que exploran el ascenso de Anakin como Jedi y su caída en el lado oscuro, y las secuelas que siguen a una nueva generación de héroes y villanos mientras enfrentan la amenaza de la Primera Orden. La franquicia también se expande a través de series de televisión, libros y otros medios, creando un universo rico y diverso que ha dejado una marca indeleble en la cultura popular y el cine. Star Wars es una epopeya que mezcla elementos de ciencia ficción y fantasía y sigue siendo un fenómeno cultural icónico."
+                        FontSize="20"
+                        />
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        Title="Anakin Skywalker"
+        IconImageSource="light_saber.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,0"
+                >
+                <StackLayout>
+                    <HorizontalStackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="2*" />
+                            </Grid.ColumnDefinitions>
+                        
+                            <Frame
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="20, 20, 20, 40"
+                                BorderColor="blue"
+                                HeightRequest="200"
+                                WidthRequest="200"
+                                CornerRadius="100"
+                                IsClippedToBounds="True">
+                                <Image
+                                    Source="anakin.jpeg"
+                                    Aspect="AspectFill"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                                    />
+                            </Frame>
+
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Text="Anakin Skywalker"
+                                FontFamily="StarWars"
+                                FontSize="38"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Margin="0, 0, 0, 40"
+                                />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Color="Blue"
+                                HeightRequest="5"
+                                Margin="0, 20, 0, 0"
+                                HorizontalOptions="Fill"
+                                />
+                        </Grid>
+                    </HorizontalStackLayout>
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="Anakin Skywalker, oriundo de Tatooine, se destacó como un prodigioso Jedi con un gran potencial en la Fuerza. Sin embargo, su vida estuvo marcada por un camino tumultuoso hacia la oscuridad. Como joven aprendiz, Anakin mostró habilidades extraordinarias, pero también lidió con el miedo y la ira, lo que lo llevó a caer bajo la influencia de Darth Sidious, quien lo sedujo hacia el lado oscuro de la Fuerza. Finalmente, Anakin se convirtió en el temible Darth Vader, un Lord Sith cuyo legado se entrelaza con la historia de la galaxia y su posterior redención a través de su hijo, Luke Skywalker."
+                        FontSize="20"
+                        />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="Darth Vader, con su icónica armadura y sable de luz rojo, se convirtió en un símbolo de la maldad, pero también en un personaje complejo que experimentó un viaje de transformación. Su historia es fundamental en la saga de Star Wars, y su legado sigue siendo una parte integral de la mitología de la franquicia."
+                        FontSize="20"
+                        />
+                </StackLayout>
+            </Frame>
+            <ImageButton
+                x:Name="btnDislikePrimerPersonaje"
+                Grid.Row="2"
+                Grid.Column="0"
+                Source="dislike.png"
+                WidthRequest="70"
+                HeightRequest="50"
+                BackgroundColor="Red"
+                CornerRadius="10"
+                Padding="5"
+                Clicked="btnDislikePrimerPersonaje_Clicked"
+                />
+            <ImageButton
+                x:Name="btnLikePrimerPersonaje"
+                Grid.Row="2"
+                Grid.Column="1"
+                Source="like.png"
+                WidthRequest="70"
+                HeightRequest="50"
+                BackgroundColor="Green"
+                CornerRadius="10"
+                Padding="5"
+                Clicked="btnLikePrimerPersonaje_Clicked"
+                />
+            <Label
+                Grid.Row="2"
+                Grid.Column="2"
+                x:Name="lblGustoPrimerPersonaje"
+                Text=""
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        Title="Obi-Wan Kenobi"
+        IconImageSource="light_saber.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,0"
+                >
+                <StackLayout>
+                    <HorizontalStackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="2*" />
+                            </Grid.ColumnDefinitions>
+                            <Frame
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Margin="20, 20, 20, 40"
+                                BorderColor="blue"
+                                HeightRequest="200"
+                                WidthRequest="200"
+                                CornerRadius="100"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                IsClippedToBounds="True">
+                                <Image
+                                    Source="obiwan.jpeg"
+                                    Aspect="AspectFill"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                                    />
+                            </Frame>
+
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Text="obi-wan Kenobi"
+                                FontSize="38"
+                                FontFamily="StarWars"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Margin="0, 0, 0, 40"
+                                />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Color="Blue"
+                                HeightRequest="5"
+                                HorizontalOptions="Fill"
+                                Margin="0, 20, 0, 0"
+                                />
+                        </Grid>
+                    </HorizontalStackLayout>
+                    <Label
+                        Text="Obi-Wan Kenobi, un respetado maestro Jedi, fue uno de los personajes más influyentes en la galaxia de Star Wars. Nacido como Ben Kenobi en el planeta Stewjon, Obi-Wan fue entrenado como Jedi desde joven y se convirtió en el aprendiz de Qui-Gon Jinn. A lo largo de su vida, desempeñó un papel crucial en los eventos clave de la saga, incluyendo la formación de Anakin Skywalker, su posterior caída y transformación en Darth Vader, y la supervivencia y entrenamiento de Luke Skywalker. Con su sabiduría, habilidades con el sable de luz y compromiso con el bien, Obi-Wan Kenobi se convirtió en una leyenda que luchó incansablemente por mantener el equilibrio en la Fuerza y la paz en la galaxia. Su legado perdura como un faro de esperanza en la eterna lucha entre el lado luminoso y oscuro de la Fuerza."
+                        FontSize="20"
+                        />
+                </StackLayout>
+            </Frame>
+            <ImageButton
+                x:Name="btnDislikeSegundoPersonaje"
+                Grid.Row="2"
+                Grid.Column="0"
+                Source="dislike.png"
+                WidthRequest="70"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                BackgroundColor="Red"
+                CornerRadius="10"
+                Padding="5"
+                Clicked="btnDislikeSegundoPersonaje_Clicked"
+                />
+            <ImageButton
+                x:Name="btnLikeSegundoPersonaje"
+                Grid.Row="2"
+                Grid.Column="1"
+                Source="like.png"
+                WidthRequest="70"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                BackgroundColor="Green"
+                CornerRadius="10"
+                Padding="5"
+                Clicked="btnLikeSegundoPersonaje_Clicked"
+                />
+            <Label
+                Grid.Row="2"
+                Grid.Column="2"
+                x:Name="lblGustoSegundoPersonaje"
+                Text=""
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </Grid>
+    </ContentPage>
+
+</TabbedPage>

@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_3P_EX_76724.MVVM.Views.MainView"
+             SelectedTabColor="white"
+             UnselectedTabColor="#6c757d"
+             BarBackgroundColor="#212529"
+            >
+
+    <ContentPage
+        Title="Home Page"
+        IconImageSource="home.png">
+        <StackLayout>        
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#CC3E50" Offset="0.0"/>
+                <GradientStop Color="#34CC5E" Offset="0.5"/>
+                <GradientStop Color="#2C3ECC" Offset="1.0"/>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+            <Frame
+                BackgroundColor="DarkBlue"
+                BorderColor="DarkBlue"
+            HasShadow="True">
+                <StackLayout>
+                    <Label
+                        Text="Bienvenido a schooler"
+                        FontSize="40"
+                        FontFamily="Lemon"
+                        TextColor="White"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Margin="30,20,30,20"
+                        />
+                    <Label
+                        Text="El software de registro de calificaciones"
+                        FontSize="25"
+                        FontFamily="Roboto"
+                        TextColor="White"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Margin="30,20,30,20"
+                        />
+                </StackLayout>
+            </Frame>
+            
+            <Image
+                Source="logo.png"
+                WidthRequest="200"
+                HeightRequest="200"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                />
+        </StackLayout>
+     
+            
+    </ContentPage>
+
+    <ContentPage
+        Title="Materias"
+        IconImageSource="education.png">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Frame
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="0"
+                BackgroundColor="DarkBlue"
+                BorderColor="DarkBlue"
+                HasShadow="True">
+                <StackLayout>
+                    <Label
+                        
+                        Text="Materias"
+                        FontSize="40"
+                        FontFamily="Lemon"
+                        TextColor="White"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Margin="0,20,0,20"
+                        />
+                </StackLayout>
+            </Frame>
+            
+            <Entry
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,0"
+                Placeholder="Ingrese nombre"
+                Text="{ Binding Subject.Name }"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                FontSize="25"
+                FontFamily="Roboto"
+                Text="Ingresa los rubros y sus porcentajes"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                />
+            <Entry
+                Grid.Column="0"
+                Grid.Row="3"
+                Text="{ Binding Subject.FirstCategory }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,0"
+                Placeholder="Rubro 1"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="3"
+                Text="{ Binding Subject.FirstPercentage }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="50,0,50,0"
+                Placeholder="Porcentaje"
+                WidthRequest="175"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="1"
+                Grid.Row="3"
+                Text="%"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,10,25,0"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="4"
+                Text="Ingresa la calificación"
+                FontSize="20"
+                FontFamily="Roboto"
+                HeightRequest="50"
+                Margin="25,0,25,0"
+                HorizontalOptions="StartAndExpand"
+                VerticalTextAlignment="Center"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="4"
+                Text="{ Binding Subject.FirstGrade }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="0,0,25,0"
+                VerticalTextAlignment="Center"
+                MinimumWidthRequest="200"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                />
+            <Entry
+                Grid.Column="0"
+                Grid.Row="5"
+                Text="{ Binding Subject.SecondCategory }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,0"
+                Placeholder="Rubro 2"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="5"
+                Text="{ Binding Subject.SecondPercentage }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="50,0,50,0"
+                Placeholder="Porcentaje"
+                WidthRequest="175"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="6"
+                Text="Ingresa la calificación"
+                FontSize="20"
+                FontFamily="Roboto"
+                HeightRequest="50"
+                Margin="25,0,25,0"
+                HorizontalOptions="StartAndExpand"
+                VerticalTextAlignment="Center"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="6"
+                Text="{ Binding Subject.SecondGrade }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="0,0,25,0"
+                VerticalTextAlignment="Center"
+                MinimumWidthRequest="200"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="1"
+                Grid.Row="5"
+                Text="%"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,10,25,0"
+                HorizontalOptions="End"
+                />
+            <Entry
+                Grid.Column="0"
+                Grid.Row="7"
+                Text="{ Binding Subject.ThirdCategory }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,0"
+                Placeholder="Rubro 3"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="7"
+                Text="{ Binding Subject.ThirdPercentage }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="50,0,50,0"
+                Placeholder="Porcentaje"
+                WidthRequest="175"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="1"
+                Grid.Row="7"
+                Text="%"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,10,25,0"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="8"
+                Text="Ingresa la calificación"
+                FontSize="20"
+                FontFamily="Roboto"
+                HeightRequest="50"
+                Margin="25,0,25,0"
+                HorizontalOptions="StartAndExpand"
+                VerticalTextAlignment="Center"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="8"
+                Text="{ Binding Subject.ThirdGrade }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="0,0,25,0"
+                VerticalTextAlignment="Center"
+                MinimumWidthRequest="200"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                />
+            <Button
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="9"
+                Text="Calificar"
+                FontSize="30"
+                HorizontalOptions="CenterAndExpand"
+                Margin="10,0,10,0"
+                MinimumWidthRequest="350"
+                HeightRequest="50"
+                Command="{ Binding ClickResult }"
+                />
+            <HorizontalStackLayout
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="10"
+                Margin="0,0,0,20">
+                <Label
+                    Text="Tu calificacion final en "
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    Margin="25,0,0,0"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text="{ Binding Subject.Name }"
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text=" es: "
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text="{ Binding FinalGrade }"
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+            </HorizontalStackLayout>
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        Title="Semetre"
+        IconImageSource="semester.png">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Frame
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="0"
+                BackgroundColor="DarkBlue"
+                BorderColor="DarkBlue"
+                HasShadow="True">
+                <StackLayout>
+                    <Label
+                        Text="Semestre"
+                        FontSize="40"
+                        FontFamily="Lemon"
+                        TextColor="White"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Margin="0,20,0,20"
+                        />
+                </StackLayout>
+            </Frame>
+            <Entry
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,0"
+                Placeholder="Ingrese nombre"
+                Text="{ Binding Semester.SubjectName }"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                FontSize="25"
+                FontFamily="Roboto"
+                Text="Ingresa los rubros y sus porcentajes"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="3"
+                Text="Primer parcial:"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,2"
+                VerticalOptions="EndAndExpand"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="3"
+                Text="{ Binding Semester.FirstPartialPercentage }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="50,0,50,0"
+                WidthRequest="175"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                Placeholder="Porcentaje"
+                />
+            <Label
+                Grid.Column="1"
+                Grid.Row="3"
+                Text="%"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,10,25,0"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="4"
+                Text="Ingresa la calificación"
+                FontSize="20"
+                FontFamily="Roboto"
+                HeightRequest="50"
+                Margin="25,0,25,0"
+                HorizontalOptions="StartAndExpand"
+                VerticalTextAlignment="Center"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="4"
+                Text="{ Binding Semester.FirstPartialGrade }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="25,0,25,0"
+                MaximumWidthRequest="200"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                Placeholder="Calificacion 1er Parcial"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="5"
+                Text="Segundo Parcial: "
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,0"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="5"
+                Text="{ Binding Semester.SecondPartialPercentage }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="50,0,50,0"
+                WidthRequest="175"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                Placeholder="Porcentaje"
+                />
+            <Label
+                Grid.Column="1"
+                Grid.Row="5"
+                Text="%"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,10,25,0"
+                HorizontalOptions="End"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="6"
+                Text="Ingresa la calificación"
+                FontSize="20"
+                FontFamily="Roboto"
+                HeightRequest="50"
+                Margin="25,0,25,0"
+                HorizontalOptions="StartAndExpand"
+                VerticalTextAlignment="Center"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="6"
+                Text="{ Binding Semester.SecondPartialGrade }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="50,0,25,0"
+                MaximumWidthRequest="200"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                Placeholder="Calificacion 2do Parcial"
+                />
+            <Label
+                Grid.Column="0"
+                Grid.Row="7"
+                Text="Tercer Parcial: "
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,0,15,0"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="7"
+                Text="{ Binding Semester.ThirdPartialGrade }"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="50,0,50,0"
+                WidthRequest="175"
+                HorizontalTextAlignment="End"
+                HorizontalOptions="End"
+                Placeholder="Porcentaje"
+                />
+            <Label
+                Grid.Column="1"
+                Grid.Row="7"
+                Text="%"
+                FontSize="25"
+                HeightRequest="50"
+                Margin="15,10,25,0"
+                HorizontalOptions="End"
+                />
+            <Button
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="8"
+                Text="Calificar"
+                FontSize="30"
+                HorizontalOptions="CenterAndExpand"
+                Margin="10,0,10,0"
+                MinimumWidthRequest="350"
+                HeightRequest="50"
+                Command="{ Binding ClickSemesterResult }"
+                />
+            <HorizontalStackLayout
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="9"
+                Margin="0,0,0,20">
+                <Label
+                    Text="Para 6 final en "
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    Margin="25,0,0,0"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text="{ Binding Semester.SubjectName }"
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text=" necesitas: "
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text="{ Binding FinalGradeForSix }"
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="10"
+                Margin="0,0,0,20">
+                <Label
+                    Text="Para 10 final en "
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    Margin="25,0,0,0"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text="{ Binding Semester.SubjectName }"
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text=" necesitas: "
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+                <Label
+                    Text="{ Binding FinalGradeForTen }"
+                    FontSize="25"
+                    FontFamily="Roboto"
+                    HeightRequest="50"
+                    VerticalTextAlignment="End"
+                    />
+            </HorizontalStackLayout>
+            <Label
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="11"
+                Text="{ Binding Announcement }"
+                FontSize="25"
+                FontFamily="Roboto"
+                HeightRequest="50"
+                VerticalTextAlignment="Center"
+                Margin="25,0,25,15"
+                VerticalOptions="EndAndExpand"
+                />
+        </Grid>
+    </ContentPage>
+    
+</TabbedPage>

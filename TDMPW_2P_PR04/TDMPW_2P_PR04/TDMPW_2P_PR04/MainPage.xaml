@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_2P_PR04.MainPage">
+    <Grid
+        x:Name="background">
+        <Grid.Background>
+            <LinearGradientBrush
+                EndPoint="1,1"
+                >
+                <GradientStopCollection>
+                    <GradientStop
+                        Offset="0.0"
+                        Color="#051937"
+                        />
+                    <GradientStop
+                        Offset="0.25"
+                        Color="#004d7a"
+                        />
+                    <GradientStop
+                        Offset="0.5"
+                        Color="#008793"
+                        />
+                    <GradientStop
+                        Offset="0.75"
+                        Color="#00bf72"
+                        />
+                    <GradientStop
+                        Offset="1"
+                        Color="#a8eb12"
+                        />
+                </GradientStopCollection>
+
+            </LinearGradientBrush>
+
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Frame
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Background="#000"
+            Opacity=".8"
+            BorderColor="white"
+            HasShadow="True"
+            CornerRadius="20"
+            Margin="20">
+            <StackLayout>
+                <Label
+                    Text="Cuestionario"
+                    TextColor="White"
+                    FontSize="40"
+                    FontFamily="happy"
+                    HorizontalTextAlignment="Center"
+                    Margin="0,0,0,20"
+                    />
+                <Label
+                    x:Name="lblCantidad"
+                    Text="Pregunta 1"
+                    FontSize="25"
+                    FontFamily="happy"
+                    Margin="0,20,0,20"
+                    HorizontalTextAlignment="Center"
+                    />
+                <Label
+                    x:Name="lblPregunta"
+                    Text="Pregunta"
+                    TextColor="White"
+                    FontSize="35"
+                    FontFamily="happy"
+                    HorizontalTextAlignment="Center"
+                    Margin="0,0,0,20"
+                    />
+                <Entry
+                    x:Name="entRespuesta"
+                    Placeholder="Tu respuesta"
+                    />
+
+                <Label
+                    x:Name="lblPuntos"
+                    Text="Puntos: 0"
+                    FontSize="25"
+                    FontFamily="happy"
+                    Margin="0,20,0,20"
+                    HorizontalTextAlignment="Center"
+                    />
+                <Label
+                    x:Name="lblIntentos"
+                    Text="Intentos: 0"
+                    FontSize="25"
+                    FontFamily="happy"
+                    HorizontalTextAlignment="Center"
+                    />
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        x:Name="lblResultado"
+                        Text=" "
+                        FontSize="25"
+                        FontFamily="happy"
+                        Margin="0,20,0,20"
+                        HorizontalTextAlignment="Center"
+                        />
+                    <Image
+                        x:Name="imgResultado"
+                        WidthRequest="30"
+                        HeightRequest="30"
+                        HorizontalOptions="Center"
+                        Margin="10"
+                        />
+                </HorizontalStackLayout>
+                
+                <Image
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    HorizontalOptions="Center"
+                    Source="question.png"
+                    />
+                <Button
+                    x:Name="btnContinuar"
+                    Text="Continuar"
+                    FontSize="30"
+                    FontFamily="happy"
+                    TextColor="Black"
+                    BackgroundColor="white"
+                    Margin="0,20,0,20"
+                    Clicked="btnContinuar_Clicked"
+                    VerticalOptions="End"
+                    />
+
+            </StackLayout>
+        </Frame>
+        
+    </Grid>
+
+</ContentPage>
+

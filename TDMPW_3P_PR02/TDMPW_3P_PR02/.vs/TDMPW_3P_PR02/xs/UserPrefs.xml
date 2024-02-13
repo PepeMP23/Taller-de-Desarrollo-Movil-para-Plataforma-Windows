@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{AEF0CF41-AB68-46DD-93EA-F9A4616153EA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDMPW_3P_PR02/Carrito.xaml">
+    <Files>
+      <File FileName="TDMPW_3P_PR02/Carrito.xaml.cs" />
+      <File FileName="TDMPW_3P_PR02/Carrito.xaml" Line="19" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TDMPW_3P_PR02" expanded="True">
+            <Node name="TDMPW_3P_PR02" expanded="True">
+              <Node name="Carrito.xaml" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TDMPW__3P__PR02 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+</Properties>

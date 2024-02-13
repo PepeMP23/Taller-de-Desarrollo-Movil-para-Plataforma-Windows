@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDMPW_1P_PR01", "TDMPW_1P_PR01\TDMPW_1P_PR01.csproj", "{877D1CB5-F66B-4292-91F1-473C09C859DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{877D1CB5-F66B-4292-91F1-473C09C859DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877D1CB5-F66B-4292-91F1-473C09C859DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877D1CB5-F66B-4292-91F1-473C09C859DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877D1CB5-F66B-4292-91F1-473C09C859DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4114AA12-FC86-4A72-84CE-B4927BC9638C}
+	EndGlobalSection
+EndGlobal

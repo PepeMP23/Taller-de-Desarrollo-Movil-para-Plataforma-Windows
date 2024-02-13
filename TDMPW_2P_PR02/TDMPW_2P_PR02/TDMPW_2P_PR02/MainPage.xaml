@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_2P_PR02.MainPage"
+             BackgroundColor="#116633">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Text="Ingrese el monto"
+            FontSize="25"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            />
+
+        <Frame
+            Grid.Row="0"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="blue"
+            HeightRequest="100"
+            Margin="20,0,20,0">
+
+            <StackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+                <Entry
+                    x:Name="entryMonto"
+                    Placeholder="0.00"
+                    TextColor="White"
+                    FontSize="25"
+                    TextChanged="entryMonto_TextChanged"
+                    />
+            </StackLayout>
+
+        </Frame>
+
+        <Frame
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            CornerRadius="25"
+            BackgroundColor="blue"
+            Margin="20">
+
+            <StackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        x:Name="lblCantidadFinal"
+                        Text="$0.00"
+                        TextColor="white"
+                        FontSize="50"
+                        />
+                </HorizontalStackLayout>
+
+                <BoxView
+                    Color="White"
+                    HeightRequest="5"
+                    Margin="20"
+                    />
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Envio"
+                        TextColor="black"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        />
+                    <Label
+                        x:Name="lblEnvio"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="0.00"
+                        TextColor="black"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Text="IVA"
+                        TextColor="black"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        />
+                    <Label
+                        x:Name="lblIVA"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Text="0.00"
+                        TextColor="black"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        />
+
+                </Grid>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    
+                </HorizontalStackLayout>
+                
+            </StackLayout>
+        </Frame>
+
+        <Label
+            Grid.Row="2"
+            Grid.Column="0"
+            Text="Seleccione el IVA"
+            TextColor="Black"
+            FontSize="25"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="20,0,0,0"
+            />
+
+        <Button
+            x:Name="btnCero"
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="0%"
+            FontSize="25"
+            TextColor="white"
+            CornerRadius="25"
+            BackgroundColor="blue"
+            HeightRequest="100"
+            WidthRequest="100"
+            Clicked="btnCero_Clicked"
+            />
+
+        <Button
+            x:Name="btnOnce"
+            Grid.Row="2"
+            Grid.Column="2"
+            Text="11%"
+            FontSize="25"
+            TextColor="white"
+            CornerRadius="25"
+            BackgroundColor="blue"
+            HeightRequest="100"
+            WidthRequest="100"
+            Clicked="btnOnce_Clicked"
+            />
+
+        <Button
+            x:Name="btnDieciseis"
+            Grid.Row="2"
+            Grid.Column="3"
+            Text="16%"
+            FontSize="25"
+            TextColor="white"
+            CornerRadius="25"
+            BackgroundColor="blue"
+            HeightRequest="100"
+            WidthRequest="100"
+            Clicked="btnDieciseis_Clicked"
+            />
+
+        <Slider
+            x:Name="sld1"
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Minimum="0"
+            Maximum="16"
+            Margin="40, 0, 40, 0"
+            ThumbColor="blue"
+            MinimumTrackColor="blue"
+            />
+
+    </Grid>
+
+</ContentPage>
+

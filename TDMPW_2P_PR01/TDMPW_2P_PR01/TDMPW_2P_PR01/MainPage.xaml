@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_2P_PR01.MainPage"
+             
+            >
+
+    <ContentPage
+        Title="Home"
+        IconImageSource="home.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="7*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,15"
+                >
+                <StackLayout>
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        BorderColor="Blue"
+                        HeightRequest="300"
+                        WidthRequest="300"
+                        CornerRadius="150"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="25,150,25,15"
+                        IsClippedToBounds="True">
+                        <Image
+                            Source="hobbies_principal.png"
+                            Aspect="AspectFill"
+                            HeightRequest="300"
+                            WidthRequest="300"
+                        />
+                    </Frame>
+
+                    <BoxView
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Color="Blue"
+                        HeightRequest="5"
+                        HorizontalOptions="Fill"
+                        Margin="0, 10, 0, 30"
+                        />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="hobbies"
+                        FontSize="42"
+                        FontFamily="StarWars"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Margin="0, 20, 0, 0"
+                        />
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        Title="Hobbies"
+        IconImageSource="hobbies.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,0"
+                >
+                <StackLayout>
+                    <StackLayout>
+                        <Label
+                            x:Name="labelNombre"
+                            Text="Pepe"
+                            FontFamily="StarWars"
+                            FontSize="38"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="0, 40, 0, 20"
+                            />
+                        <BoxView
+                            Color="Blue"
+                            HeightRequest="5"
+                            Margin="0, 20, 0, 20"
+                            HorizontalOptions="Fill"
+                            />
+                    </StackLayout>
+                    <Label
+                        Text="HOBBIES"
+                        FontSize="30"
+                        />
+                    <HorizontalStackLayout>
+                        <Frame
+                            BorderColor="Blue"
+                            HeightRequest="40"
+                            WidthRequest="40"
+                            CornerRadius="9"
+                            IsClippedToBounds="True">
+                            <Image
+                                Source="movies.png"
+                                Aspect="AspectFill"
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                BackgroundColor="white"
+                            />
+                        </Frame>
+                        <Label
+                            Text="Ver Películas"
+                            FontSize="25"
+                            Margin="10,10,10,10"
+                        />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Frame
+                            BorderColor="Blue"
+                            HeightRequest="40"
+                            WidthRequest="40"
+                            CornerRadius="9"
+                            IsClippedToBounds="True">
+                            <Image
+                                Source="programming.png"
+                                Aspect="AspectFill"
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                BackgroundColor="white"
+                            />
+                        </Frame>
+                        <Label
+                            Text="Programar"
+                            FontSize="25"
+                            Margin="10,10,10,10"
+                            />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Frame
+                            BorderColor="Blue"
+                            HeightRequest="40"
+                            WidthRequest="40"
+                            CornerRadius="9"
+                            IsClippedToBounds="True">
+                            <Image
+                                Source="walking.png"
+                                Aspect="AspectFill"
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                BackgroundColor="white"
+                            />
+                        </Frame>
+                        <Label
+                            Text="Caminar"
+                            FontSize="25"
+                            Margin="10,10,10,10"
+                            />
+                    </HorizontalStackLayout>
+                    
+                    <Label
+                        Text="NIVEL"
+                        FontSize="30"
+                        Margin="0,20,0,0"
+                        />
+                    <HorizontalStackLayout>
+                        <Slider
+                            x:Name="sld1"
+                            Minimum="0"
+                            Maximum="10"
+                            Value="9"
+                            WidthRequest="900"
+                            Margin="0,0,50,0"
+                            />
+                        <Label
+                            Text="{Binding Source={x:Reference sld1}, Path=Value, StringFormat='{0:F0}'}"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            FontSize="20"
+                            />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Slider
+                            x:Name="sld2"
+                            Minimum="0"
+                            Maximum="10"
+                            Value="7"
+                            WidthRequest="900"
+                            Margin="0,0,50,0"
+                            />
+                        <Label
+                            Text="{Binding Source={x:Reference sld2}, Path=Value, StringFormat='{0:F0}'}"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            FontSize="20"
+                            />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Slider
+                            x:Name="sld3"
+                            Minimum="0"
+                            Maximum="10"
+                            Value="7"
+                            WidthRequest="900"
+                            Margin="0,0,50,0"
+                            />
+                        <Label
+                            Text="{Binding Source={x:Reference sld3}, Path=Value, StringFormat='{0:F0}'}"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            FontSize="20"
+                            />
+                    </HorizontalStackLayout>
+
+                </StackLayout>
+            </Frame>
+            <Entry
+                x:Name="entryNombre"
+                Placeholder="Escribe un nombre"
+                Grid.Row="2"
+                Grid.Column="0"
+                TextChanged="entryNombre_TextChanged"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        Title="Hobbie"
+        IconImageSource="movies.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BorderColor="blue"
+                CornerRadius="50"
+                Padding="20"
+                Margin="25,15,25,0"
+                >
+                <StackLayout>
+                    <HorizontalStackLayout>
+
+                        <VerticalStackLayout>
+                            <Label
+                                x:Name="lblHobbie1"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Text="Hobbie"
+                                FontSize="38"
+                                FontFamily="StarWars"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Margin="10, 20, 0, 10"
+                                />
+                            <BoxView
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Color="Blue"
+                                HeightRequest="5"
+                                HorizontalOptions="FillAndExpand"
+                                Margin="0, 20, 0, 40"
+                                />
+                        </VerticalStackLayout>
+
+                            <Switch
+                                x:Name="switchControl"
+                                ThumbColor="Yellow"
+                                OnColor="Blue"
+                                Margin="250,0,25,0"
+                                IsToggled="False"
+                                Toggled="switchControl_Toggled_1"
+                                />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        >
+                        <Stepper
+                            x:Name="stepperControl"
+                            Maximum="10"
+                            Minimum="0"
+                            Increment="1"
+                            BackgroundColor="Blue"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ValueChanged="stepperControl_ValueChanged"
+                            Margin="0,70,0,0"
+                        />
+
+                    </HorizontalStackLayout>
+
+                        <Slider
+                            IsEnabled="True"
+                            x:Name="sliderControl"
+                            Margin="50"
+                            Maximum="10"
+                            Minimum="0"
+                            ValueChanged="sliderControl_ValueChanged"
+                            />
+
+                    <HorizontalStackLayout
+                        HorizontalOptions="Center">
+                        <Label
+                            x:Name="labelValue"
+                            Text="0"
+                            HorizontalOptions="Center"
+                            FontSize="40"
+                            />
+                    </HorizontalStackLayout>
+
+                </StackLayout>
+            </Frame>
+            <Entry
+                x:Name="entryHobbie2"
+                Placeholder="Escribe un nombre"
+                Grid.Row="2"
+                Grid.Column="0"
+                TextChanged="entryHobbie2_TextChanged"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </Grid>
+    </ContentPage>
+
+</TabbedPage>

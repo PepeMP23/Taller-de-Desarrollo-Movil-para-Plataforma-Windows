@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{DDF5C413-0114-4E00-9C76-E708DB2AFED8}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDMPW_3P_EJ02/MVVM/Views/PersonView.xaml">
+    <Files>
+      <File FileName="TDMPW_3P_EJ02/MVVM/Models/Person.cs" />
+      <File FileName="TDMPW_3P_EJ02/MVVM/ViewModels/PersonViewModel.cs" />
+      <File FileName="TDMPW_3P_EJ02/MVVM/Views/PersonView.xaml" Line="15" Column="43" />
+      <File FileName="TDMPW_3P_EJ02/MVVM/Views/PersonView.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TDMPW_3P_EJ02" expanded="True">
+            <Node name="TDMPW_3P_EJ02">
+              <Node name="MVVM" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="Views" expanded="True">
+                  <Node name="PersonView.xaml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TDMPW__3P__EJ02 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/pepe/Documents/LaSalle/4to Semestre/Taller de Desarrollo Movil para Plataforma Windows/TDMPW_3P_EJ02/TDMPW_3P_EJ02/TDMPW_3P_EJ02/MainPage.xaml" relfile="TDMPW_3P_EJ02/MainPage.xaml" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
